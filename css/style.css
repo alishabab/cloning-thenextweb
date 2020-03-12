@@ -12,6 +12,7 @@
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  border: 1px solid red;
 }
 
 header {
@@ -116,4 +117,45 @@ main {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 20px;
   color: white;
+}
+
+/* WORKING ON LATEST NEWS SECTION */
+
+.lastest-news {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.latest-news-heading {
+  color: #f42;
+}
+
+.latest-news-article {
+  display: flex;
+  background-color: chartreuse;
+}
+
+.latest-news-img {
+  display: block;
+  width: 75px;
+  height: 75px;
+}
+
+.latest-news-img img {
+  width: 100%;
+}
+
+.latest-news-text {
+  margin-left: 5px;
+}
+
+.latest-news-article-heading {
+  color: #000;
+}
+
+.latest-news-text span {
+  color:#aaa;
+}
+.latest-news-text span a {
+  color:#aaa;
 }
