@@ -149,8 +149,6 @@ main {
   padding: 12px 14px;
 }
 .title-link {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-  font-size: 20px;
   color: white;
 }
 
@@ -342,4 +340,39 @@ main {
 
 .funding-round-bottom a span {
   color: #aaa;
+}
+
+/* WORKING ON CATEGORIES SECTION */
+
+.categories article {
+  width: 100%;
+  padding: 4px;
+  position: relative;
+}
+
+.general-category > a  {
+  display: block;
+  height: 200px;
+  width: 100%;
+  background-blend-mode:overlay;
+  background-size: cover;
+}
+
+.popular-app {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Logitech-368x276.jpg");
+}
+
+.general-category div {
+  position: absolute;
+  top: 100px;
+  padding: 12px 14px;
+}
+
+.most-popular {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.lcategory-latest {
+  display: flex;
 }
