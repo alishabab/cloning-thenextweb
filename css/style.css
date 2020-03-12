@@ -10,9 +10,9 @@
   text-decoration: none;
   box-sizing: border-box;
   font-size: 16px;
+  font-family: Roboto, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  border: 1px solid red;
 }
 
 header {
@@ -30,7 +30,7 @@ header {
 }
 
 .logo-content {
-  min-width: 100px;
+  min-width: 28%;
   background: linear-gradient(to right, #d00590, rgb(255, 102, 0));
   display: flex;
     justify-content: center;
@@ -76,7 +76,7 @@ header {
 
 .tech-festival {
   width: 100%;
-  height: 50px;
+  height: 60px;
   background-color: rgb(255, 196, 0);
 }
 
@@ -123,39 +123,69 @@ main {
 
 .lastest-news {
   width: 90%;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
-.latest-news-heading {
+.lastest-news h2 {
+  margin-bottom: 20px;
+}
+.section-heading {
   color: #f42;
+  font-size: 28px;
+}
+
+.section-heading:after {
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="%23F42" stroke-width="3" stroke-miterlimit="10" d="M4.75 1.5l6.5 6.5-6.5 6.5"/></svg>');
+  background-size: 16px 16px;
+  content: "";
+  display: inline-block;
+  height: 16px;
+  margin-left: 4px;
+  position: relative;
+  top: 0;
+  width: 16px;
 }
 
 .latest-news-article {
   display: flex;
-  background-color: chartreuse;
+  margin-top: 20px;
 }
 
 .latest-news-img {
   display: block;
   width: 75px;
   height: 75px;
+  box-shadow: .4px .4px 1px black;
 }
 
 .latest-news-img img {
-  width: 100%;
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/braincomputer-516x270.jpg);
+  width: 75px;
+  height: 75px;
+  background-size: cover;
+  background-position: center;
+  display: block;
 }
 
 .latest-news-text {
-  margin-left: 5px;
+  margin-left: 15px;
 }
 
 .latest-news-article-heading {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
   color: #000;
 }
 
-.latest-news-text span {
-  color:#aaa;
+.author-name-n-date * {
+  color: #AAA;
+  font-size: 12px;
+  margin-top: 8px;
+  display: inline-block;
 }
-.latest-news-text span a {
-  color:#aaa;
+
+.author-name-n-date a:after{
+  content: "\B7";
+  margin-left: 4px;
 }
