@@ -101,9 +101,20 @@ main {
   height: 184px;
   width: 100%;
   background-color: rgba(0,0,0,.45);
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design16-796x417.png");
+  /* background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design16-796x417.png"); */
   background-blend-mode:overlay;
   background-size: cover;
+}
+
+.top-news1 a {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design16-796x417.png");
+}
+.top-news2 a {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/TNW-Conference-PanelImg.jpg");
+}
+
+.top-news3 a {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Copy-of-...-4-796x417.png");
 }
 
 .top-news1 div,
@@ -159,7 +170,7 @@ main {
 }
 
 .latest-news-img img {
-  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/braincomputer-516x270.jpg);
+  /* background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/braincomputer-516x270.jpg); */
   width: 75px;
   height: 75px;
   background-size: cover;
