@@ -1,3 +1,11 @@
+/* TO DO LIST */
+/* 
+ 1- Fix background of .author-name-n-date of .top-news;
+ 2- Fix section-heading:after on hover;
+ 3- Fix latest news border
+
+
+*/
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
 :root {
@@ -21,6 +29,11 @@ header {
   width: 100%;
   margin-top: -70px;
 }
+
+section {
+  width: 90%;
+  margin: 40px auto;
+}
 /* WORKING ON HEADER & NAVBAR & NAVBAR ICONS */
 .header-container {
   display: flex;
@@ -30,7 +43,7 @@ header {
 }
 
 .logo-content {
-  min-width: 28%;
+  width: 106px;
   background: linear-gradient(to right, #d00590, rgb(255, 102, 0));
   display: flex;
     justify-content: center;
@@ -63,7 +76,7 @@ header {
 }
 
 .icon {
-  display: block;
+  display: inline-block;
   box-sizing: content-box;
   width: 16px;
   height: 16px;
@@ -74,10 +87,22 @@ header {
   background-position:-832px -832px;
 }
 
+.icon-tag {
+  background: var(--bg);
+  background-position: -976px -976px;
+  margin: 0 5px 0 15px;
+}
+
+.icon-breifcase {
+  background: var(--bg);
+  background-position: -48px -48px;
+  margin: 0 5px 0 15px;
+ }
+
 .tech-festival {
   width: 100%;
   height: 60px;
-  background-color: rgb(255, 196, 0);
+  background-color: #fd3;
 }
 
 /* WORKING ON MAIN */
@@ -85,7 +110,7 @@ main {
   margin-top: 70px;
 }
 .top-news {
-  width: 95%;
+  width: 98%;
   margin: 0 auto;
 }
 
@@ -101,7 +126,6 @@ main {
   height: 184px;
   width: 100%;
   background-color: rgba(0,0,0,.45);
-  /* background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design16-796x417.png"); */
   background-blend-mode:overlay;
   background-size: cover;
 }
@@ -132,14 +156,11 @@ main {
 
 /* WORKING ON LATEST NEWS SECTION */
 
-.lastest-news {
-  width: 90%;
-  margin: 40px auto;
-}
 
 .lastest-news h2 {
   margin-bottom: 20px;
 }
+
 .section-heading {
   color: #f42;
   font-size: 28px;
@@ -157,20 +178,22 @@ main {
   width: 16px;
 }
 
-.latest-news-article {
+.section-heading:hover{
+  color: #000;
+}
+
+
+.latest-article {
   display: flex;
   margin-top: 20px;
 }
 
-.latest-news-img {
+.latest-img {
   display: block;
-  width: 75px;
-  height: 75px;
   box-shadow: .4px .4px 1px black;
 }
 
-.latest-news-img img {
-  /* background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/braincomputer-516x270.jpg); */
+.latest-img img {
   width: 75px;
   height: 75px;
   background-size: cover;
@@ -178,11 +201,50 @@ main {
   display: block;
 }
 
-.latest-news-text {
+.news-pic-1 {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/braincomputer-516x270.jpg);
+}
+
+
+.news-pic-2 {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/communication-516x270.png);
+}
+
+
+.news-pic-3 {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Logitech-515x270.jpg);
+}
+
+
+.news-pic-4 {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/applewatch1200-516x270.png);
+}
+
+
+.news-pic-5 {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/Epic-Games-Store-1-513x270.jpg);
+}
+
+
+.news-pic-6 {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Snag_3eff9168-520x270.png);
+}
+
+
+.news-pic-7 {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design16-516x270.png);
+}
+
+
+.news-pic-8 {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/02/Horizon-Zero-Dawn™_20170211220426-540x270.jpg);
+}
+
+.latest-text {
   margin-left: 15px;
 }
 
-.latest-news-article-heading {
+.latest-article-heading {
   font-size: 14px;
   font-weight: bold;
   display: block;
@@ -199,4 +261,85 @@ main {
 .author-name-n-date a:after{
   content: "\B7";
   margin-left: 4px;
+}
+
+/* WORKING ON LATEST FUNDING SECTION */
+.funding-round {
+  background: #fffaf8;
+  margin: 10px auto;
+}
+.funding-links {
+  display: block;
+  color: #f42;
+  margin: 10px auto;
+}
+
+.funding-links:hover{
+  color: black;
+}
+
+.funding-round-header {
+  margin: 20px auto;
+  display: block;
+  position: relative;
+}
+
+.funding-round-header-h4 {
+  background-color: #f42;
+  color: white;
+  padding: 10px 16px 10px 84px;
+  font-size: 18px;
+}
+
+.funding-round-value {
+  padding: 14px 16px 14px 84px;
+  background: rgba(255,68,34,.08);
+  color: black;
+  font-size: 18px;
+}
+
+.funding-round-value h5 {
+  font-size: 11px;
+  text-transform: uppercase;
+  color:#000;
+  opacity: .5;
+  font-weight: 100;
+  margin-top: 5px;
+}
+
+.funding-round-header-img {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+}
+
+.funding-round-middle {
+  border-bottom: 1px solid #ffccc2;
+}
+
+.funding-round-middle a {
+  font-size: 13px;
+  color: #555;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.funding-round-middle a:hover {
+  color: black;
+}
+
+.funding-round-bottom {
+  padding: 16px;
+}
+
+.funding-round-bottom * {
+  font-size: 13px;
+  color: #555;
+}
+
+.funding-round-bottom a span {
+  color: #aaa;
 }
