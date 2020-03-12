@@ -1,32 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+:root {
+  --bg: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783)
+}
+
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
   font-size: 16px;
-  border: 1px solid red;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  margin-top: -70px;
+}
+/* WORKING ON HEADER & NAVBAR & NAVBAR ICONS */
 .header-container {
   display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
+  background-color: white;
+  height: 48px;
+}
+
+.logo-content {
+  min-width: 100px;
+  background: linear-gradient(to right, #d00590, rgb(255, 102, 0));
+  display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
-  min-width: 100px;
-  background-color: aqua;
+  width: 66px;
+  height: 16px;
+}
+
+.navbar {
+  display: flex;
+  margin-right: 5px;
+}
+
+.navbar a {
+  padding: 16px;
+  border-left: 1px solid #eee;
+}
+
+.navbar a span {
+  height: 2px;
+  width: 20px;
+  background: #f42;
+  margin-top: 4px;
+  display: block;
+  position: relative;
+  bottom: 4px;
+}
+
+.icon {
+  display: block;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+}
+
+.search-icon {
+  background: var(--bg);
+  background-position:-832px -832px;
 }
 
 .tech-festival {
   width: 100%;
   height: 50px;
-  background-color: black;
+  background-color: rgb(255, 196, 0);
 }
 
+/* WORKING ON MAIN */
+main {
+  margin-top: 70px;
+}
 .top-news {
-  display: flex;
   width: 95%;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
+.top-news article {
+  width: 100%;
+  padding: 4px;
+  position: relative;
+}
+.top-news1 > a,
+.top-news2 > a,
+.top-news3 > a  {
+  display: block;
+  height: 184px;
+  width: 100%;
+  background-color: rgba(0,0,0,.45);
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design16-796x417.png");
+  background-blend-mode:overlay;
+  background-size: cover;
+}
+
+.top-news1 div,
+.top-news2 div,
+.top-news3 div {
+  position: absolute;
+  top: 95px;
+  padding: 12px 14px;
+}
+.title-link {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+}
