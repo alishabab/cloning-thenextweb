@@ -374,6 +374,7 @@ main {
 .most-popular {
   font-size: 14px;
   font-weight: 300;
+  color: #fff;
 }
 
 .category-latest {
@@ -390,9 +391,6 @@ main {
   font-size: 13px;
 }
 
-.category-latest-text a:hover{
-}
-
 .category-latest-text h5 {
   font-weight: 500;
   text-transform: uppercase;
@@ -404,12 +402,20 @@ main {
 }
 
 .category-latest-text h4 {
+  margin-left: 15px;
+}
+
+.category-latest-text h4 a {
   color: #f42;
   font-weight: 700;
   line-height: 1.25;
-  margin-left: 15px;
   font-size: 13px;
 }
+
+.category-latest-text a:hover {
+  box-shadow: inset 0 -1px 0 rgba(255,68,34,.2);
+}
+
 .latest-img-1 {
   background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/Apple_16-inch-MacBook-Pro_New-Magic-Keyboard_111319_inline.jpg.medium_2x.jpg");
   margin-left: 4px;
