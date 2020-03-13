@@ -1,4 +1,6 @@
-/* TO DO LIST */
+/* TO DO 
+IST */
+
 /* 
  1- Fix background of .author-name-n-date of .top-news;
  2- Fix section-heading:after on hover;
@@ -6,8 +8,8 @@
 
 
 */
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 :root {
   --bg: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783)
 }
@@ -19,6 +21,7 @@
   box-sizing: border-box;
   font-size: 16px;
   font-family: Roboto, Helvetica, sans-serif;
+  list-style: none;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -34,10 +37,12 @@ section {
   width: 90%;
   margin: 40px auto;
 }
+
 /* WORKING ON HEADER & NAVBAR & NAVBAR ICONS */
+
 .header-container {
   display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
   background-color: white;
   height: 48px;
 }
@@ -46,8 +51,8 @@ section {
   width: 106px;
   background: linear-gradient(to right, #d00590, rgb(255, 102, 0));
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -76,6 +81,7 @@ section {
 }
 
 .icon {
+  background: var(--bg);
   display: inline-block;
   box-sizing: content-box;
   width: 16px;
@@ -83,21 +89,18 @@ section {
 }
 
 .search-icon {
-  background: var(--bg);
-  background-position:-832px -832px;
+  background-position: -832px -832px;
 }
 
 .icon-tag {
-  background: var(--bg);
   background-position: -976px -976px;
   margin: 0 5px 0 15px;
 }
 
 .icon-breifcase {
-  background: var(--bg);
   background-position: -48px -48px;
   margin: 0 5px 0 15px;
- }
+}
 
 .tech-festival {
   width: 100%;
@@ -106,9 +109,11 @@ section {
 }
 
 /* WORKING ON MAIN */
+
 main {
   margin-top: 70px;
 }
+
 .top-news {
   width: 98%;
   margin: 0 auto;
@@ -119,20 +124,20 @@ main {
   padding: 4px;
   position: relative;
 }
-.top-news1 > a,
-.top-news2 > a,
-.top-news3 > a  {
+
+.top-news1>a, .top-news2>a, .top-news3>a {
   display: block;
   height: 184px;
   width: 100%;
-  background-color: rgba(0,0,0,.45);
-  background-blend-mode:overlay;
+  background-color: rgba(0, 0, 0, .45);
+  background-blend-mode: overlay;
   background-size: cover;
 }
 
 .top-news1 a {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design16-796x417.png");
 }
+
 .top-news2 a {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/TNW-Conference-PanelImg.jpg");
 }
@@ -141,19 +146,17 @@ main {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Copy-of-...-4-796x417.png");
 }
 
-.top-news1 div,
-.top-news2 div,
-.top-news3 div {
+.top-news1 div, .top-news2 div, .top-news3 div {
   position: absolute;
   top: 95px;
   padding: 12px 14px;
 }
+
 .title-link {
   color: white;
 }
 
 /* WORKING ON LATEST NEWS SECTION */
-
 
 .lastest-news h2 {
   margin-bottom: 20px;
@@ -176,10 +179,9 @@ main {
   width: 16px;
 }
 
-.section-heading:hover{
+.section-heading:hover {
   color: #000;
 }
-
 
 .latest-article {
   display: flex;
@@ -203,36 +205,29 @@ main {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/braincomputer-516x270.jpg);
 }
 
-
 .news-pic-2 {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/communication-516x270.png);
 }
-
 
 .news-pic-3 {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Logitech-515x270.jpg);
 }
 
-
 .news-pic-4 {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/applewatch1200-516x270.png);
 }
-
 
 .news-pic-5 {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/Epic-Games-Store-1-513x270.jpg);
 }
 
-
 .news-pic-6 {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Snag_3eff9168-520x270.png);
 }
 
-
 .news-pic-7 {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design16-516x270.png);
 }
-
 
 .news-pic-8 {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/02/Horizon-Zero-Dawn™_20170211220426-540x270.jpg);
@@ -256,23 +251,25 @@ main {
   display: inline-block;
 }
 
-.author-name-n-date a:after{
+.author-name-n-date a:after {
   content: "\B7";
   margin-left: 4px;
 }
 
 /* WORKING ON LATEST FUNDING SECTION */
+
 .funding-round {
   background: #fffaf8;
   margin: 10px auto;
 }
+
 .funding-links {
   display: block;
   color: #f42;
   margin: 10px auto;
 }
 
-.funding-links:hover{
+.funding-links:hover {
   color: black;
 }
 
@@ -291,7 +288,7 @@ main {
 
 .funding-round-value {
   padding: 14px 16px 14px 84px;
-  background: rgba(255,68,34,.08);
+  background: rgba(255, 68, 34, .08);
   color: black;
   font-size: 18px;
 }
@@ -299,7 +296,7 @@ main {
 .funding-round-value h5 {
   font-size: 11px;
   text-transform: uppercase;
-  color:#000;
+  color: #000;
   opacity: .5;
   font-weight: 100;
   margin-top: 5px;
@@ -344,17 +341,17 @@ main {
 
 /* WORKING ON CATEGORIES SECTION */
 
-.categories article {
+.general-category {
   width: 100%;
   padding: 4px;
   position: relative;
 }
 
-.general-category > a  {
+.general-category>a {
   display: block;
   height: 200px;
   width: 100%;
-  background-blend-mode:overlay;
+  background-blend-mode: overlay;
   background-size: cover;
 }
 
@@ -362,7 +359,7 @@ main {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Logitech-368x276.jpg");
 }
 
-.general-category div {
+.heading-absolute {
   position: absolute;
   top: 100px;
   padding: 12px 14px;
@@ -375,4 +372,118 @@ main {
 
 .category-latest {
   display: flex;
+  width: 100%;
+  background: rgba(255, 68, 34, .08);
+  margin-top: 2px;
+}
+
+.latest-img-1 {
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/Apple_16-inch-MacBook-Pro_New-Magic-Keyboard_111319_inline.jpg.medium_2x.jpg");
+  margin-left: 4px;
+}
+
+/* WORKING ON FOOTER */
+
+.footer-links {
+  width: 100%;
+  background: #131313;
+  padding: 2.5em 0;
+}
+
+.footer-links-social {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-links-social a {
+  background: #333;
+  border-radius: 50%;
+  display: block;
+  height: 40px;
+  padding: 12px;
+  text-align: center;
+  width: 40px;
+}
+
+.footer-links-social a .icon {
+  height: 16px;
+  width: 16px;
+}
+
+.icon--facebook--light {
+  background-position: -272px -272px;
+}
+
+.icon--twitter--light {
+  background-position: -1024px -1024px;
+}
+
+.icon--youtube--light {
+  background-position: -1280px -1280px;
+}
+
+.icon--instagram--light {
+  background-position: -416px -416px;
+}
+
+.icon--pinterest--light {
+  background-position: -672px -672px;
+}
+
+.icon--rss--light {
+  background-position: -816px -816px;
+}
+
+.icon--mail--light {
+  background-position: -576px -576px;
+}
+
+.footer-links-menu {
+  text-align: center;
+}
+
+.footer-links-menu a {
+  color: #aaa;
+  text-transform: uppercase;
+}
+
+.footer-legal {
+  width: 100%;
+  background: #000;
+  color: #aaa;
+  font-size: 13px;
+  padding: 2.5em 0;
+  text-align: center;
+}
+
+.footer-legal span {
+  display: block;
+  text-align: center;
+}
+
+.footer-legal span b {
+  color: #f42;
+}
+
+.footer-legal-wrapper {
+  margin: 0 auto;
+  max-width: 1192px;
+  padding: 0 20px;
+}
+
+.footer-tnw-logo {
+  display: inline-block;
+  height: 9px;
+  margin-right: 1px;
+  vertical-align: baseline;
+}
+
+.footer-legal-logoStackPath {
+  display: inline-block;
+  height: 9px;
+  margin-right: 1px;
+  vertical-align: baseline;
 }
