@@ -372,11 +372,29 @@ main {
 
 .category-latest {
   display: flex;
+  justify-content: space-between;
   width: 100%;
   background: rgba(255, 68, 34, .08);
   margin-top: 2px;
 }
 
+.category-latest-text {
+  color: #f42;
+  font-size: 13px;
+}
+
+.category-latest-text h5 {
+  font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    line-height: 1.5;
+}
+
+.category-latest-text h4 {
+  color: #f42;
+    font-weight: 700;
+    line-height: 1.25;
+}
 .latest-img-1 {
   background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/Apple_16-inch-MacBook-Pro_New-Magic-Keyboard_111319_inline.jpg.medium_2x.jpg");
   margin-left: 4px;
