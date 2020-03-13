@@ -4,8 +4,9 @@ IST */
 /* 
  1- Fix background of .author-name-n-date of .top-news;
  2- Fix section-heading:after on hover;
- 3- Fix latest news border
-
+ 3- Fix latest news border;
+ 4- Fix footer social icons border;
+ 5- Fix .latest-img-1 img border;
 
 */
 
@@ -190,7 +191,6 @@ main {
 
 .latest-img {
   display: block;
-  box-shadow: .4px .4px 1px black;
 }
 
 .latest-img img {
@@ -347,14 +347,20 @@ main {
   position: relative;
 }
 
-.general-category>a {
+.general-category > a {
   display: block;
   height: 200px;
   width: 100%;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, .45);
   background-blend-mode: overlay;
   background-size: cover;
+  margin-top: 15px;
 }
-
+.categories .latest-img img {
+  height: 96px;
+  width: 96px;
+}
 .popular-app {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Logitech-368x276.jpg");
 }
@@ -374,6 +380,7 @@ main {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: 96px;
   background: rgba(255, 68, 34, .08);
   margin-top: 2px;
 }
@@ -383,23 +390,58 @@ main {
   font-size: 13px;
 }
 
+.category-latest-text a:hover{
+}
+
 .category-latest-text h5 {
   font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: .04em;
-    line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-left: 15px;
 }
 
 .category-latest-text h4 {
   color: #f42;
-    font-weight: 700;
-    line-height: 1.25;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-left: 15px;
+  font-size: 13px;
 }
 .latest-img-1 {
   background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/Apple_16-inch-MacBook-Pro_New-Magic-Keyboard_111319_inline.jpg.medium_2x.jpg");
   margin-left: 4px;
 }
 
+.section-headline-title a {
+  position: relative;
+  color: #555;
+  font-weight: normal;
+  font-size: 12px;
+  padding: 6px 16px;
+  display: block;
+}
+
+.section-headline-list li h4 {
+  box-shadow: 0 5px 1px -5.5px #333;
+}
+
+.section-headline-title a:hover{
+  color: #000;
+}
+.section-headline-title a::before {
+    background-color: #f42;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: 13px;
+    width: 4px;
+}
 /* WORKING ON FOOTER */
 
 .footer-links {
@@ -409,7 +451,7 @@ main {
 }
 
 .footer-links-social {
-  width: 80%;
+  width: 85%;
   margin: 20px auto;
   display: flex;
   justify-content: space-between;
@@ -418,12 +460,14 @@ main {
 
 .footer-links-social a {
   background: #333;
+  border: 1px solid #333;
   border-radius: 50%;
   display: block;
   height: 40px;
   padding: 12px;
   text-align: center;
   width: 40px;
+  margin-right: 2px;
 }
 
 .footer-links-social a .icon {
@@ -466,6 +510,12 @@ main {
 .footer-links-menu a {
   color: #aaa;
   text-transform: uppercase;
+  font-size: 13px;
+  padding: 0.2em;
+}
+
+.footer-links-menu a:hover{
+  color: #fff;
 }
 
 .footer-legal {
@@ -504,4 +554,9 @@ main {
   height: 9px;
   margin-right: 1px;
   vertical-align: baseline;
+}
+
+.footer-icon:hover{
+  background-color: transparent;
+  border: 1px solid grey;
 }
