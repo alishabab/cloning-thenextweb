@@ -11,6 +11,7 @@ IST */
 */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
 :root {
   --bg: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783)
 }
@@ -21,9 +22,8 @@ IST */
   text-decoration: none;
   box-sizing: border-box;
   font-size: 16px;
-  font-family: Roboto, Helvetica, sans-serif;
+  font-family: Avalon, Helvetica, sans-serif;
   list-style: none;
-  -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
@@ -54,6 +54,13 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+}
+
+.logo-content:hover {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/home-1.gif);
+  background-position: 50%;
+  background-size: cover;
 }
 
 .logo {
@@ -63,7 +70,6 @@ section {
 
 .navbar {
   display: flex;
-  margin-right: 5px;
 }
 
 .navbar a {
@@ -104,9 +110,16 @@ section {
 }
 
 .tech-festival {
+  display: block;
   width: 100%;
-  height: 60px;
   background-color: #fd3;
+  margin: 0 auto;
+  text-align: center;
+  color: #000;
+}
+.tech-festival div {
+  font-size: 12px;
+  line-height: 60px;
 }
 
 /* WORKING ON MAIN */
@@ -128,28 +141,31 @@ main {
 
 .top-news1>a, .top-news2>a, .top-news3>a {
   display: block;
-  height: 184px;
+  min-height: 235px;
   width: 100%;
   background-color: rgba(0, 0, 0, .45);
   background-blend-mode: overlay;
   background-size: cover;
+  background-position: 50%;
 }
 
-.top-news1 a {
+.top-news1> a {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design16-796x417.png");
+
+  height: 100%;
 }
 
-.top-news2 a {
+.top-news2> a {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/TNW-Conference-PanelImg.jpg");
 }
 
-.top-news3 a {
+.top-news3> a {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Copy-of-...-4-796x417.png");
 }
 
 .top-news1 div, .top-news2 div, .top-news3 div {
   position: absolute;
-  top: 95px;
+  bottom: 0px;
   padding: 12px 14px;
 }
 
@@ -180,8 +196,9 @@ main {
   width: 16px;
 }
 
-.section-heading:hover {
+.section-heading:hover{
   color: #000;
+
 }
 
 .latest-article {
@@ -240,8 +257,17 @@ main {
 .latest-article-heading {
   font-size: 14px;
   font-weight: bold;
-  display: block;
   color: #000;
+}
+
+.latest-article-heading:hover {
+  box-shadow: inset 0 -1px 0 rgba(255,68,34,.25);
+  color: #f42;
+}
+
+.latest-article-heading::after {
+  content: '';
+  display: block
 }
 
 .author-name-n-date * {
@@ -249,6 +275,10 @@ main {
   font-size: 12px;
   margin-top: 8px;
   display: inline-block;
+}
+
+.author-name-n-date a:hover {
+  color: #555;
 }
 
 .author-name-n-date a:after {
@@ -340,7 +370,13 @@ main {
 }
 
 /* WORKING ON CATEGORIES SECTION */
+.categories > article{
+  margin: 10px auto;
+}
 
+.categories .author-name-n-date a:hover {
+  color:#fff;
+}
 .general-category {
   width: 100%;
   padding: 4px;
@@ -431,10 +467,10 @@ main {
 }
 
 .section-headline-list li h4 {
-  box-shadow: 0 5px 1px -5.5px #333;
+  box-shadow: 0 5px 1px -5px #333;
 }
 
-.section-headline-title a:hover{
+.section-headline-title a:hover {
   color: #000;
 }
 .section-headline-title a::before {
@@ -448,12 +484,13 @@ main {
     top: 13px;
     width: 4px;
 }
+
 /* WORKING ON FOOTER */
 
 .footer-links {
   width: 100%;
   background: #131313;
-  padding: 2.5em 0;
+  padding: 2.2em 0;
 }
 
 .footer-links-social {
@@ -476,6 +513,7 @@ main {
   margin-right: 2px;
 }
 
+/* WORKING ON FOOTER ICONS */
 .footer-links-social a .icon {
   height: 16px;
   width: 16px;
@@ -528,12 +566,12 @@ main {
   width: 100%;
   background: #000;
   color: #aaa;
-  font-size: 13px;
   padding: 2.5em 0;
   text-align: center;
 }
 
 .footer-legal span {
+  font-size: 13px;
   display: block;
   text-align: center;
 }
@@ -565,4 +603,31 @@ main {
 .footer-icon:hover{
   background-color: transparent;
   border: 1px solid grey;
+}
+
+
+/* WORKING ON RESPONSIVENESS */
+
+@media only screen and (min-width: 768px) {
+
+  .top-news {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2;
+    grid-template-areas: "a b"
+                         "a c";
+  }
+
+  .top-news1 {
+    grid-area: a;
+
+  }
+
+  .top-news2 {
+    grid-area: b;
+  }
+
+  .top-news3 {
+    grid-area: c;
+  }
 }
