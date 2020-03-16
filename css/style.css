@@ -34,11 +34,10 @@ header {
   position: fixed;
   z-index: 1;
   width: 100%;
-  margin-top: -70px;
 }
 
 section {
-  width: 90%;
+  width: 95%;
   margin: 40px auto;
 }
 
@@ -129,7 +128,7 @@ section {
 /* WORKING ON MAIN */
 
 main {
-  margin-top: 70px;
+  padding-top: 110px;
 }
 
 .top-news {
@@ -146,8 +145,9 @@ main {
 .top-news1>a, .top-news2>a, .top-news3>a {
   display: block;
   min-height: 235px;
+  height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, .45);
+  background-color: rgba(0, 0, 0, .25);
   background-blend-mode: overlay;
   background-size: cover;
   background-position: 50%;
@@ -170,7 +170,7 @@ main {
 .top-news1 div, .top-news2 div, .top-news3 div {
   position: absolute;
   bottom: 0px;
-  padding: 12px 14px;
+  padding: 20px 14px;
 }
 
 .title-link {
@@ -179,8 +179,8 @@ main {
 
 /* WORKING ON LATEST NEWS SECTION */
 
-.lastest-news h2 {
-  margin-bottom: 20px;
+.latest-news h2 {
+  margin-left: 15px;
 }
 
 .section-heading {
@@ -378,6 +378,10 @@ main {
   margin: 10px auto;
 }
 
+.apps-categorie h2 {
+  padding: 7px;
+}
+
 .categories .author-name-n-date a:hover {
   color:#fff;
 }
@@ -389,25 +393,53 @@ main {
 
 .general-category > a {
   display: block;
-  height: 200px;
   width: 100%;
   background-size: cover;
   background-color: rgba(0, 0, 0, .45);
   background-blend-mode: overlay;
   background-size: cover;
-  margin-top: 15px;
+  padding-top: 75%;
 }
 .categories .latest-img img {
   height: 96px;
   width: 96px;
 }
+
 .popular-app {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Logitech-368x276.jpg");
 }
 
+.popular-app2 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/header-image-ios-13.4-368x276.png");
+}
+
+.popular-app3 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/ai_baby_header-368x276.png");
+}
+
+.popular-app4 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Amazon-Dating-Featured-368x276.jpg");
+}
+
+.popular-app5 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/code-1076536_1920-368x276.jpg");
+}
+
+.popular-app6 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/Untitled-design53-368x276.png");
+}
+
+.popular-app7 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/bubble-car-isetta-bmw-microlino-microletta-ev-car-new-announced-368x276.png");
+}
+
+.popular-app8 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/porn-coronavirus-marketing-368x276.jpg");
+}
+
 .heading-absolute {
   position: absolute;
-  top: 100px;
+  bottom: 300px;
   padding: 12px 14px;
 }
 
@@ -498,7 +530,8 @@ main {
 }
 
 .footer-links-social {
-  width: 85%;
+  max-width: 400px;
+  width: 90%;
   margin: 20px auto;
   display: flex;
   justify-content: space-between;
@@ -618,10 +651,13 @@ main {
 .verticle-bar {
   display: none;
 }
+
 @media only screen and (min-width: 768px) {
 
 /* WORKING ON HEADER */
-
+section {
+  width: 99%;
+}
 .header-container {
   height: 80px;
   justify-content: unset;
@@ -648,8 +684,24 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
-.navbar-list-top {
+
+.navbar-top, .right {
+  display: flex;
+  align-items: center;
   background-color: #131313;
+  justify-content: space-between;
+}
+.left {
+  max-width: 450px;
+  width: 100%;
+}
+
+.right {
+  max-width: 250px;
+  width: 27%;
+  margin-right: 20px;
+}
+.navbar-list-top {
   color:white;
   font-size: 13px;
   font-weight: 500;
@@ -676,6 +728,7 @@ main {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-left: 5px;
   }
 
   .navbar-list-bottom > a {
@@ -683,6 +736,7 @@ main {
     border-left: 1px solid rgb(230, 230, 230);
     width: 48px;
     height: 48px;
+    margin-right: 7px;
   }
   .navbar-list-bottom ul {
     justify-content: space-around;
@@ -691,15 +745,16 @@ main {
   .tech-festival div {
     line-height: 30px;
     text-align: start;
-    margin-left: 100px;
+    margin-left: 120px;
   }
   /* WORKING ON MAIN */
   .top-news {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2;
     grid-template-areas: "a b"
                          "a c";
+    height: 540px;
+    margin-bottom: 90px;
   }
 
   .top-news1 {
@@ -707,6 +762,9 @@ main {
 
   }
 
+  .title1 {
+    font-size: 40px;
+  }
   .top-news2 {
     grid-area: b;
   }
@@ -719,12 +777,14 @@ main {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: start;
   }
 
   .latest-article {
     display: block;
-    width: 32%;
-    margin-right: 1%;
+    max-width: 33%;
+    flex-basis: 33%;
+    padding: 12px;
   }
 
   .latest-text {
@@ -737,34 +797,74 @@ main {
   }
     /* WORKING ON LATEST FUNDING */
 
-.funding-links {
-  display: inline;
-  color: #f42;
-  margin: 10px auto;
+  .funding-links {
+    display: inline;
+    color: #f42;
+    margin: 10px auto;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .verticle-bar {
+    display: inline;
+    color: #f42;
+  }
+
+  .funding-round-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .funding-round {
+    width: 32%;
+  }
+
+  /* WORKING ON CATEGORIES SECION */
+
+  .categories-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .apps-categorie {
+    max-width: 50%;
+    flex-basis: 50%;
+    padding: 10px;
+  }
 }
 
-.verticle-bar {
-  display: inline;
-  color: #f42;
-}
+@media only screen and (min-width:1020px) {
+  .hide {
+    display: block;
+  }
 
-.funding-round-container {
-  display: flex;
-  justify-content: space-between;
-}
+  .funding-round {
+    max-width: 25%;
+    flex-basis: 25%;
+    padding: 10px;
+  }
+  .title1 {
+    font-size: 56px;
+    line-height: 1;
+  }
+  .top-news {
+    height: 458px;
+  }
+  .latest-article {
+    display: block;
+    max-width: 25%;
+    flex-basis: 25%;
+    padding: 12px;
+  }
 
-.funding-round {
-  width: 32%;
-}
+  .apps-categorie {
+    flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
 
-/* WORKING ON CATEGORIES SECION */
-
-.categories-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.apps-categorie {
-  width: 50%;
-}
+  .latest-news, .latest-funding, .categories {
+    max-width: 1152px;
+  }
 }
