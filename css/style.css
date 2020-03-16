@@ -27,6 +27,9 @@ IST */
   text-rendering: optimizeLegibility;
 }
 
+a {
+  color: white;
+}
 header {
   position: fixed;
   z-index: 1;
@@ -68,16 +71,17 @@ section {
   height: 16px;
 }
 
-.navbar {
+.navbar,.navbar-icons {
   display: flex;
 }
 
-.navbar a {
+
+.navbar-icons a {
   padding: 16px;
-  border-left: 1px solid #eee;
+  border-left: 1px solid rgb(236, 236, 236);
 }
 
-.navbar a span {
+.navbar-icons a span {
   height: 2px;
   width: 20px;
   background: #f42;
@@ -605,11 +609,87 @@ main {
   border: 1px solid grey;
 }
 
-
 /* WORKING ON RESPONSIVENESS */
 
+.tablet-navbar {
+  display: none;
+}
 @media only screen and (min-width: 768px) {
 
+/* WORKING ON HEADER */
+
+.header-container {
+  height: 80px;
+  justify-content: unset;
+}
+
+.navbar, .navbar-icons{
+  width: 100%;
+}
+
+.navbar a {
+  border: none;
+  padding: 0;
+  font-size: 13px;
+  color: #AAA
+}
+
+.navbar-icons {
+  display: none;
+}
+
+.tablet-navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navbar-list-top {
+  background-color: #131313;
+  color:white;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 32px;
+  max-height: 32px;
+  justify-content: space-around;
+  padding: 0 10px;
+}
+
+.about-space {
+  margin-left: 20px;
+}
+
+  .navbar-list-bottom ul, .navbar-list-top {
+    display: flex;
+    width: 100%;
+  }
+
+  .navbar-list-bottom ul {
+    max-width: 453px;
+    text-transform: uppercase;
+  }
+  .navbar-list-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbar-list-bottom > a {
+    padding: 16px;
+    border-left: 1px solid rgb(230, 230, 230);
+    width: 48px;
+    height: 48px;
+  }
+  .navbar-list-bottom ul {
+    justify-content: space-around;
+    align-items: center;
+  }
+  .tech-festival div {
+    line-height: 30px;
+    text-align: start;
+    margin-left: 100px;
+  }
+  /* WORKING ON MAIN */
   .top-news {
     display: grid;
     grid-template-columns: 2fr 1fr;
