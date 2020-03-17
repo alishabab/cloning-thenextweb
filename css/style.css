@@ -1,7 +1,7 @@
-/* TO DO 
+/* TO DO
 IST */
 
-/* 
+/*
  1- Fix background of .author-name-n-date of .top-news;
  2- Fix section-heading:after on hover;
  3- Fix latest news border;
@@ -13,7 +13,7 @@ IST */
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
 :root {
-  --bg: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783)
+  --bg: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783);
 }
 
 * {
@@ -30,6 +30,7 @@ IST */
 a {
   color: white;
 }
+
 header {
   position: fixed;
   z-index: 1;
@@ -70,14 +71,20 @@ section {
   height: 16px;
 }
 
-.navbar,.navbar-icons {
+.navbar,
+.navbar-icons {
   display: flex;
 }
-
 
 .navbar-icons a {
   padding: 16px;
   border-left: 1px solid rgb(236, 236, 236);
+}
+
+.footer-legal span {
+  font-size: 13px;
+  display: block;
+  text-align: center;
 }
 
 .navbar-icons a span {
@@ -120,6 +127,7 @@ section {
   text-align: center;
   color: #000;
 }
+
 .tech-festival div {
   font-size: 12px;
   line-height: 60px;
@@ -142,34 +150,37 @@ main {
   position: relative;
 }
 
-.top-news1>a, .top-news2>a, .top-news3>a {
+.top-news1 > a,
+.top-news2 > a,
+.top-news3 > a {
   display: block;
   min-height: 235px;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, .25);
+  background-color: rgba(0, 0, 0, 0.25);
   background-blend-mode: overlay;
   background-size: cover;
   background-position: 50%;
 }
 
-.top-news1> a {
+.top-news1 > a {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design16-796x417.png");
-
   height: 100%;
 }
 
-.top-news2> a {
+.top-news2 > a {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/TNW-Conference-PanelImg.jpg");
 }
 
-.top-news3> a {
+.top-news3 > a {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Copy-of-...-4-796x417.png");
 }
 
-.top-news1 div, .top-news2 div, .top-news3 div {
+.top-news1 div,
+.top-news2 div,
+.top-news3 div {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   padding: 20px 14px;
 }
 
@@ -188,7 +199,7 @@ main {
   font-size: 28px;
 }
 
-.section-heading:after {
+.section-heading::after {
   background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="%23F42" stroke-width="3" stroke-miterlimit="10" d="M4.75 1.5l6.5 6.5-6.5 6.5"/></svg>');
   background-size: 16px 16px;
   content: "";
@@ -200,9 +211,8 @@ main {
   width: 16px;
 }
 
-.section-heading:hover{
+.section-heading:hover {
   color: #000;
-
 }
 
 .latest-article {
@@ -258,7 +268,7 @@ main {
 
 .ribbon {
   background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg);
-  display:block;
+  display: block;
   position: absolute;
   top: 0;
   right: 0;
@@ -280,35 +290,35 @@ main {
 }
 
 .deals-pic-1 {
-  background: url(https://cdnp1.stackassets.com/d70d575440dc2303f6c0f578f6546cc872eb2b6b/store/bc8a1c7c761aaedca8d2eb395cf9fccb9e15aadd0d764277c827cda8ada8/sale_26801_primary_image.jpg)
+  background: url(https://cdnp1.stackassets.com/d70d575440dc2303f6c0f578f6546cc872eb2b6b/store/bc8a1c7c761aaedca8d2eb395cf9fccb9e15aadd0d764277c827cda8ada8/sale_26801_primary_image.jpg);
 }
 
 .deals-pic-2 {
-  background: url(https://cdnp3.stackassets.com/f54c9185d68a19989ac1618bb5f955852e40ea0e/store/988cf18b55dc05a3eca624beef4de98a661b6f75463223a0c57759f988b1/sale_23318_primary_image.jpg)
+  background: url(https://cdnp3.stackassets.com/f54c9185d68a19989ac1618bb5f955852e40ea0e/store/988cf18b55dc05a3eca624beef4de98a661b6f75463223a0c57759f988b1/sale_23318_primary_image.jpg);
 }
 
 .deals-pic-3 {
-  background: url(https://cdnp1.stackassets.com/80c619e01841705c913719fbeb2a7d59d0b06b74/store/8b2bffd1fff65448a1d281f7ae49c6b6dfa3395ebe7d0789ec06e927b70f/sale_26679_primary_image.jpg)
+  background: url(https://cdnp1.stackassets.com/80c619e01841705c913719fbeb2a7d59d0b06b74/store/8b2bffd1fff65448a1d281f7ae49c6b6dfa3395ebe7d0789ec06e927b70f/sale_26679_primary_image.jpg);
 }
 
 .deals-pic-4 {
-  background: url(https://cdnp1.stackassets.com/cba31166b47b2c151d94a8397c4aa0604771f268/store/04b44dd5593f2a7c175e4dd48292fe76d560b9c1c0536d03345aa8c50141/sale_18367_primary_image.jpg)
+  background: url(https://cdnp1.stackassets.com/cba31166b47b2c151d94a8397c4aa0604771f268/store/04b44dd5593f2a7c175e4dd48292fe76d560b9c1c0536d03345aa8c50141/sale_18367_primary_image.jpg);
 }
 
 .deals-pic-5 {
-  background: url(https://cdnp0.stackassets.com/a1b45c57042cdef1f1b897016cfde23589de621d/store/55c827cf0a6ce820b885872694c7271be3c3e8f89e91e59b2637a866fffa/sale_25748_primary_image.jpg)
+  background: url(https://cdnp0.stackassets.com/a1b45c57042cdef1f1b897016cfde23589de621d/store/55c827cf0a6ce820b885872694c7271be3c3e8f89e91e59b2637a866fffa/sale_25748_primary_image.jpg);
 }
 
 .deals-pic-6 {
-  background: url(https://cdnp1.stackassets.com/b0d6e5036bbc8bd458e72850dc5901ebf21eed85/store/3d6dd37b949b26b1aa826f291674ec8ca3d75f7cf6b4631135120de96ac4/sale_xxxxx_primary_image.jpg)
+  background: url(https://cdnp1.stackassets.com/b0d6e5036bbc8bd458e72850dc5901ebf21eed85/store/3d6dd37b949b26b1aa826f291674ec8ca3d75f7cf6b4631135120de96ac4/sale_xxxxx_primary_image.jpg);
 }
 
 .deals-pic-7 {
-  background: url(https://cdnp1.stackassets.com/b5f373f63242539de2302f03aa9498601d6a2968/store/6214a05e495b0b0a9c306989bfa8053c49cc83f6c0cb7c9cae0e22124210/product_36559_product_shots3.jpg)
+  background: url(https://cdnp1.stackassets.com/b5f373f63242539de2302f03aa9498601d6a2968/store/6214a05e495b0b0a9c306989bfa8053c49cc83f6c0cb7c9cae0e22124210/product_36559_product_shots3.jpg);
 }
 
 .deals-pic-8 {
-  background: url(https://cdnp1.stackassets.com/4c6357549bbe196eac7a2a550f3cf2a380f39e44/store/7d5851d962ea8a62a7e9939f0efebc686b69d83821b63060d3109048021b/sale_19399_primary_image.jpg)
+  background: url(https://cdnp1.stackassets.com/4c6357549bbe196eac7a2a550f3cf2a380f39e44/store/7d5851d962ea8a62a7e9939f0efebc686b69d83821b63060d3109048021b/sale_19399_primary_image.jpg);
 }
 
 .latest-text {
@@ -322,27 +332,82 @@ main {
 }
 
 .latest-article-heading:hover {
-  box-shadow: inset 0 -1px 0 rgba(255,68,34,.25);
+  box-shadow: inset 0 -1px 0 rgba(255, 68, 34, 0.25);
   color: #f42;
 }
 
 .latest-article-heading::after {
   content: '';
-  display: block
+  display: block;
 }
 
 .author-name-n-date * {
-  color: #AAA;
+  color: #aaa;
   font-size: 12px;
   margin-top: 8px;
   display: inline-block;
+}
+
+.funding-round-middle a {
+  font-size: 13px;
+  color: #555;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.general-category > a {
+  display: block;
+  width: 100%;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.45);
+  background-blend-mode: overlay;
+  padding-top: 75%;
+}
+
+.section-headline-title a {
+  position: relative;
+  color: #555;
+  font-weight: normal;
+  font-size: 12px;
+  padding: 6px 16px;
+  display: block;
+}
+
+.footer-links-social a {
+  background: #333;
+  border: 1px solid #333;
+  border-radius: 50%;
+  display: block;
+  height: 40px;
+  padding: 12px;
+  text-align: center;
+  width: 40px;
+  margin-right: 2px;
+}
+
+.footer-links-menu a {
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 0.2em;
+}
+
+.category-latest-text h4 a {
+  color: #f42;
+  font-weight: 700;
+  line-height: 1.25;
+  font-size: 13px;
+}
+
+.category-latest-text a:hover {
+  box-shadow: inset 0 -1px 0 rgba(255, 68, 34, 0.2);
 }
 
 .author-name-n-date a:hover {
   color: #555;
 }
 
-.author-name-n-date a:after {
+.author-name-n-date a::after {
   content: "\B7";
   margin-left: 4px;
 }
@@ -379,7 +444,7 @@ main {
 
 .funding-round-value {
   padding: 14px 16px 14px 84px;
-  background: rgba(255, 68, 34, .08);
+  background: rgba(255, 68, 34, 0.08);
   color: black;
   font-size: 18px;
 }
@@ -388,7 +453,7 @@ main {
   font-size: 11px;
   text-transform: uppercase;
   color: #000;
-  opacity: .5;
+  opacity: 0.5;
   font-weight: 100;
   margin-top: 5px;
 }
@@ -404,13 +469,6 @@ main {
 
 .funding-round-middle {
   border-bottom: 1px solid #ffccc2;
-}
-
-.funding-round-middle a {
-  font-size: 13px;
-  color: #555;
-  display: block;
-  margin-bottom: 10px;
 }
 
 .funding-round-middle a:hover {
@@ -431,7 +489,8 @@ main {
 }
 
 /* WORKING ON CATEGORIES SECTION */
-.categories > article{
+
+.categories > article {
   margin: 10px auto;
 }
 
@@ -439,24 +498,24 @@ main {
   padding: 7px;
 }
 
-.categories .author-name-n-date a:hover {
-  color:#fff;
+.section-headline-title a:hover {
+  color: #000;
 }
+
+.footer-links-menu a:hover {
+  color: #fff;
+}
+
+.categories .author-name-n-date a:hover {
+  color: #fff;
+}
+
 .general-category {
   width: 100%;
   padding: 4px;
   position: relative;
 }
 
-.general-category > a {
-  display: block;
-  width: 100%;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, .45);
-  background-blend-mode: overlay;
-  background-size: cover;
-  padding-top: 75%;
-}
 .categories .latest-img img {
   height: 96px;
   width: 96px;
@@ -511,7 +570,7 @@ main {
   justify-content: space-between;
   width: 100%;
   height: 96px;
-  background: rgba(255, 68, 34, .08);
+  background: rgba(255, 68, 34, 0.08);
   margin-top: 2px;
 }
 
@@ -523,7 +582,7 @@ main {
 .category-latest-text h5 {
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: .04em;
+  letter-spacing: 0.04em;
   font-size: 14px;
   line-height: 1.5;
   margin-top: 10px;
@@ -534,48 +593,25 @@ main {
   margin-left: 15px;
 }
 
-.category-latest-text h4 a {
-  color: #f42;
-  font-weight: 700;
-  line-height: 1.25;
-  font-size: 13px;
-}
-
-.category-latest-text a:hover {
-  box-shadow: inset 0 -1px 0 rgba(255,68,34,.2);
-}
-
 .latest-img-1 {
   background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/Apple_16-inch-MacBook-Pro_New-Magic-Keyboard_111319_inline.jpg.medium_2x.jpg");
   margin-left: 4px;
-}
-
-.section-headline-title a {
-  position: relative;
-  color: #555;
-  font-weight: normal;
-  font-size: 12px;
-  padding: 6px 16px;
-  display: block;
 }
 
 .section-headline-list li h4 {
   box-shadow: 0 5px 1px -5px #333;
 }
 
-.section-headline-title a:hover {
-  color: #000;
-}
 .section-headline-title a::before {
-    background-color: #f42;
-    border-radius: 50%;
-    content: "";
-    display: block;
-    height: 4px;
-    left: 0;
-    position: absolute;
-    top: 13px;
-    width: 4px;
+  background-color: #f42;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  top: 13px;
+  width: 4px;
 }
 
 /* WORKING ON FOOTER */
@@ -595,19 +631,8 @@ main {
   flex-wrap: wrap;
 }
 
-.footer-links-social a {
-  background: #333;
-  border: 1px solid #333;
-  border-radius: 50%;
-  display: block;
-  height: 40px;
-  padding: 12px;
-  text-align: center;
-  width: 40px;
-  margin-right: 2px;
-}
-
 /* WORKING ON FOOTER ICONS */
+
 .footer-links-social a .icon {
   height: 16px;
   width: 16px;
@@ -645,28 +670,11 @@ main {
   text-align: center;
 }
 
-.footer-links-menu a {
-  color: #aaa;
-  text-transform: uppercase;
-  font-size: 13px;
-  padding: 0.2em;
-}
-
-.footer-links-menu a:hover{
-  color: #fff;
-}
-
 .footer-legal {
   width: 100%;
   background: #000;
   color: #aaa;
   padding: 2.5em 0;
-  text-align: center;
-}
-
-.footer-legal span {
-  font-size: 13px;
-  display: block;
   text-align: center;
 }
 
@@ -694,7 +702,7 @@ main {
   vertical-align: baseline;
 }
 
-.footer-icon:hover{
+.footer-icon:hover {
   background-color: transparent;
   border: 1px solid grey;
 }
@@ -709,84 +717,93 @@ main {
   display: none;
 }
 
-
 .hide {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-
   .latest-img .ribbon {
     display: block;
   }
+
   .latest-img img {
     padding-top: 50%;
+    width: 100%;
+    height: 120px;
   }
+
   .latest-deals .latest-img img {
     padding-top: 75%;
   }
-/* WORKING ON HEADER */
-section {
-  width: 99%;
-}
-.header-container {
-  height: 80px;
-  justify-content: unset;
-}
 
-.navbar, .navbar-icons{
-  width: 100%;
-}
+  /* WORKING ON HEADER */
+  section {
+    width: 99%;
+  }
 
-.navbar a {
-  border: none;
-  padding: 0;
-  font-size: 13px;
-  color: #AAA
-}
+  .header-container {
+    height: 80px;
+    justify-content: unset;
+  }
 
-.navbar-icons {
-  display: none;
-}
+  .navbar,
+  .navbar-icons {
+    width: 100%;
+  }
 
-.tablet-navbar {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+  .navbar a {
+    border: none;
+    padding: 0;
+    font-size: 13px;
+    color: #aaa;
+  }
 
-.navbar-top, .right {
-  display: flex;
-  align-items: center;
-  background-color: #131313;
-  justify-content: space-between;
-}
-.left {
-  max-width: 450px;
-  width: 100%;
-}
+  .navbar-icons {
+    display: none;
+  }
 
-.right {
-  max-width: 250px;
-  width: 27%;
-  margin-right: 20px;
-}
-.navbar-list-top {
-  color:white;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 32px;
-  max-height: 32px;
-  justify-content: space-around;
-  padding: 0 10px;
-}
+  .tablet-navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-.about-space {
-  margin-left: 20px;
-}
+  .navbar-top,
+  .right {
+    display: flex;
+    align-items: center;
+    background-color: #131313;
+    justify-content: space-between;
+  }
 
-  .navbar-list-bottom ul, .navbar-list-top {
+  .left {
+    max-width: 450px;
+    width: 100%;
+  }
+
+  .right {
+    max-width: 250px;
+    width: 27%;
+    margin-right: 20px;
+  }
+
+  .navbar-list-top {
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 32px;
+    max-height: 32px;
+    justify-content: space-around;
+    padding: 0 10px;
+  }
+
+  .about-space {
+    margin-left: 20px;
+  }
+
+  .navbar-list-bottom ul,
+  .navbar-list-top {
     display: flex;
     width: 100%;
   }
@@ -794,7 +811,10 @@ section {
   .navbar-list-bottom ul {
     max-width: 453px;
     text-transform: uppercase;
+    justify-content: space-around;
+    align-items: center;
   }
+
   .navbar-list-bottom {
     display: flex;
     justify-content: space-between;
@@ -809,37 +829,36 @@ section {
     height: 48px;
     margin-right: 7px;
   }
-  .navbar-list-bottom ul {
-    justify-content: space-around;
-    align-items: center;
-  }
+
   .tech-festival div {
     line-height: 30px;
     text-align: start;
     margin-left: 120px;
   }
+
   /* WORKING ON MAIN */
   .top-news {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-areas: "a b"
-                         "a c";
+    grid-template-areas: "a b" "a c";
     height: 540px;
     margin-bottom: 90px;
   }
 
   .top-news1 {
     grid-area: a;
-
   }
 
   .title1 {
     font-size: 40px;
   }
-  .top-news2 .top-title, .top-news3 .top-title {
+
+  .top-news2 .top-title,
+  .top-news3 .top-title {
     font-size: 22px;
     font-weight: 900;
   }
+
   .top-news2 {
     grid-area: b;
   }
@@ -847,6 +866,7 @@ section {
   .top-news3 {
     grid-area: c;
   }
+
   /* WORKING ON LATEST NEWS */
   .latest-news-container {
     display: flex;
@@ -866,12 +886,7 @@ section {
     margin-left: 0;
   }
 
-  .latest-img img {
-    width: 100%;
-    height: 120px;
-  }
-    /* WORKING ON LATEST FUNDING */
-
+  /* WORKING ON LATEST FUNDING */
   .funding-links {
     display: inline;
     color: #f42;
@@ -893,7 +908,6 @@ section {
   }
 
   /* WORKING ON CATEGORIES SECION */
-
   .categories-container {
     display: flex;
     flex-wrap: wrap;
@@ -904,25 +918,30 @@ section {
     flex-basis: 50%;
     padding: 10px;
   }
+
+  .footer-legal-wrapper {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-@media only screen and (min-width:1020px) {
+@media only screen and (min-width: 1020px) {
   .logo-content {
     display: none;
   }
 
-  .latest-funding-title-n-links{
+  .latest-funding-title-n-links {
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
   }
-  
+
   .logo {
     width: 450px;
     height: 150px;
   }
 
-  .latest-article-heading{
+  .latest-article-heading {
     font-size: 16px;
   }
 
@@ -935,6 +954,7 @@ section {
     background-size: cover;
     mix-blend-mode: lighten;
   }
+
   .hide {
     display: block;
   }
@@ -944,6 +964,7 @@ section {
     flex-basis: 25%;
     padding: 10px;
   }
+
   .title1 {
     font-size: 56px;
     line-height: 1;
@@ -961,7 +982,14 @@ section {
     max-width: 33.3333333333%;
   }
 
-  .latest-news, .latest-funding, .categories {
+  .latest-news,
+  .latest-funding,
+  .categories {
     max-width: 1152px;
+  }
+
+  .footer-legal-wrapper {
+    display: flex;
+    justify-content: center;
   }
 }
