@@ -150,9 +150,9 @@ main {
   position: relative;
 }
 
-.top-news1 > a,
-.top-news2 > a,
-.top-news3 > a {
+.top-news1 > div,
+.top-news2 > div,
+.top-news3 > div {
   display: block;
   min-height: 235px;
   height: 100%;
@@ -163,22 +163,20 @@ main {
   background-position: 50%;
 }
 
-.top-news1 > a {
+.top-news1 > div {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design16-796x417.png");
   height: 100%;
 }
 
-.top-news2 > a {
+.top-news2 > div {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/TNW-Conference-PanelImg.jpg");
 }
 
-.top-news3 > a {
+.top-news3 > div {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Copy-of-...-4-796x417.png");
 }
 
-.top-news1 div,
-.top-news2 div,
-.top-news3 div {
+.headline-absolue {
   position: absolute;
   bottom: 0;
   padding: 20px 14px;
@@ -355,7 +353,7 @@ main {
   margin-bottom: 10px;
 }
 
-.general-category > a {
+.general-category > .popular-app {
   display: block;
   width: 100%;
   background-size: cover;
@@ -521,7 +519,7 @@ main {
   width: 96px;
 }
 
-.popular-app {
+.popular-app1 {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Logitech-368x276.jpg");
 }
 
@@ -798,6 +796,10 @@ main {
     padding: 0 10px;
   }
 
+  .navbar-top :hover {
+    color: white;
+  }
+
   .about-space {
     margin-left: 20px;
   }
@@ -828,6 +830,10 @@ main {
     width: 48px;
     height: 48px;
     margin-right: 7px;
+  }
+
+  .navbar-list-bottom :hover {
+    color: #000;
   }
 
   .tech-festival div {
@@ -928,6 +934,10 @@ main {
 @media only screen and (min-width: 1020px) {
   .logo-content {
     display: none;
+  }
+
+  .tech-festival div {
+    margin-left: 20px;
   }
 
   .latest-funding-title-n-links {
