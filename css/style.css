@@ -212,11 +212,13 @@ main {
 
 .latest-img {
   display: block;
+  position: relative;
+  margin-bottom: 10px;
 }
 
 .latest-img img {
   width: 75px;
-  height: 75px;
+  padding-top: 75px;
   background-size: cover;
   background-position: center;
   display: block;
@@ -252,6 +254,61 @@ main {
 
 .news-pic-8 {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/02/Horizon-Zero-Dawn™_20170211220426-540x270.jpg);
+}
+
+.ribbon {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg);
+  display:block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 80px;
+  width: 80px;
+}
+
+.ribbon-text {
+  transform: rotate(45deg);
+  color: black;
+  font-weight: bold;
+  position: relative;
+  top: 24px;
+  left: 7px;
+  font-size: 13px;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.deals-pic-1 {
+  background: url(https://cdnp1.stackassets.com/d70d575440dc2303f6c0f578f6546cc872eb2b6b/store/bc8a1c7c761aaedca8d2eb395cf9fccb9e15aadd0d764277c827cda8ada8/sale_26801_primary_image.jpg)
+}
+
+.deals-pic-2 {
+  background: url(https://cdnp3.stackassets.com/f54c9185d68a19989ac1618bb5f955852e40ea0e/store/988cf18b55dc05a3eca624beef4de98a661b6f75463223a0c57759f988b1/sale_23318_primary_image.jpg)
+}
+
+.deals-pic-3 {
+  background: url(https://cdnp1.stackassets.com/80c619e01841705c913719fbeb2a7d59d0b06b74/store/8b2bffd1fff65448a1d281f7ae49c6b6dfa3395ebe7d0789ec06e927b70f/sale_26679_primary_image.jpg)
+}
+
+.deals-pic-4 {
+  background: url(https://cdnp1.stackassets.com/cba31166b47b2c151d94a8397c4aa0604771f268/store/04b44dd5593f2a7c175e4dd48292fe76d560b9c1c0536d03345aa8c50141/sale_18367_primary_image.jpg)
+}
+
+.deals-pic-5 {
+  background: url(https://cdnp0.stackassets.com/a1b45c57042cdef1f1b897016cfde23589de621d/store/55c827cf0a6ce820b885872694c7271be3c3e8f89e91e59b2637a866fffa/sale_25748_primary_image.jpg)
+}
+
+.deals-pic-6 {
+  background: url(https://cdnp1.stackassets.com/b0d6e5036bbc8bd458e72850dc5901ebf21eed85/store/3d6dd37b949b26b1aa826f291674ec8ca3d75f7cf6b4631135120de96ac4/sale_xxxxx_primary_image.jpg)
+}
+
+.deals-pic-7 {
+  background: url(https://cdnp1.stackassets.com/b5f373f63242539de2302f03aa9498601d6a2968/store/6214a05e495b0b0a9c306989bfa8053c49cc83f6c0cb7c9cae0e22124210/product_36559_product_shots3.jpg)
+}
+
+.deals-pic-8 {
+  background: url(https://cdnp1.stackassets.com/4c6357549bbe196eac7a2a550f3cf2a380f39e44/store/7d5851d962ea8a62a7e9939f0efebc686b69d83821b63060d3109048021b/sale_19399_primary_image.jpg)
 }
 
 .latest-text {
@@ -652,8 +709,22 @@ main {
   display: none;
 }
 
+
+.hide {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
 
+  .latest-img .ribbon {
+    display: block;
+  }
+  .latest-img img {
+    padding-top: 50%;
+  }
+  .latest-deals .latest-img img {
+    padding-top: 75%;
+  }
 /* WORKING ON HEADER */
 section {
   width: 99%;
@@ -765,6 +836,10 @@ section {
   .title1 {
     font-size: 40px;
   }
+  .top-news2 .top-title, .top-news3 .top-title {
+    font-size: 22px;
+    font-weight: 900;
+  }
   .top-news2 {
     grid-area: b;
   }
@@ -803,10 +878,6 @@ section {
     margin: 10px auto;
   }
 
-  .hide {
-    display: none;
-  }
-
   .verticle-bar {
     display: inline;
     color: #f42;
@@ -836,6 +907,34 @@ section {
 }
 
 @media only screen and (min-width:1020px) {
+  .logo-content {
+    display: none;
+  }
+
+  .latest-funding-title-n-links{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  
+  .logo {
+    width: 450px;
+    height: 150px;
+  }
+
+  .latest-article-heading{
+    font-size: 16px;
+  }
+
+  .logo-desktop {
+    position: absolute;
+    top: 4px;
+    width: 99%;
+    background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png);
+    background-size: auto;
+    background-size: cover;
+    mix-blend-mode: lighten;
+  }
   .hide {
     display: block;
   }
@@ -849,9 +948,7 @@ section {
     font-size: 56px;
     line-height: 1;
   }
-  .top-news {
-    height: 458px;
-  }
+
   .latest-article {
     display: block;
     max-width: 25%;
