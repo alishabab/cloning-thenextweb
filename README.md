@@ -1,6 +1,5 @@
-@@ -1 +1,90 @@
-# cloning-thenextweb
-<h3 align="center">Responsive Design Project</h3>
+
+<h1 align="center">Responsive Design Project</h1>
 
 <div align="center">
 
