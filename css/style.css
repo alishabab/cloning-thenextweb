@@ -715,9 +715,10 @@ main {
   display: none;
 }
 
-.hide {
+.hide, .hide-all {
   display: none;
 }
+
 
 @media only screen and (min-width: 768px) {
   .latest-img .ribbon {
