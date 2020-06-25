@@ -25,7 +25,7 @@
 
 
 ## 🧐 About <a name = "about"></a>
-<h3 align="center"> This is an assigment for Microverse's HTML and CSS course, and the goal is to clone the TNW <a href="https://thenextweb.com/">main page</a>, to learn how responsiveness works. We also learn a lot about gradients, grid, flex, margin and padding.</h3>
+<h3 align="center"> In this project we are cloning the TNW's <a href="https://thenextweb.com/">main page</a>. We have used CSS Flexboxes and CSS media queries to make the page responsive to small, medium and large screens.</h3>
 <p align="center">
   <a href="" rel="noopener">
  <img src="./img/screenshot.png" alt="Project Screenshot"></a>
